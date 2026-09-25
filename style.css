@@ -1,0 +1,49 @@
+:root {
+    --azul: #1A3A5C;
+    --azul2: #2563A8;
+    --azul3: #5B9BD5;
+    --dourado: #C8922A;
+    --fundo: #F5F7FA;
+    --tinta: #1A1A2E;
+    --cinza: #5A6270;
+    --linha: #D0D7E3;
+    --branco: #ffffff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--tinta);
+    background-color: var(--fundo);
+}
+
+#cabecalho {
+    background-color: var(--azul);
+    padding: 10px 10px;
+}
+
+#menu-cabecalho ul{
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+}
+
+.link-nav {
+    color: var(--linha);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.link-nav:hover{
+    color: var(--dourado);
+    text-decoration: underline;
+}
