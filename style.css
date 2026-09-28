@@ -4,6 +4,8 @@
     --azul3: #5B9BD5;
     --dourado: #C8922A;
     --fundo: #F5F7FA;
+    --fundo2: #F0F0F0;
+    --fundo3: #D0D7D3;
     --tinta: #1A1A2E;
     --cinza: #5A6270;
     --linha: #D0D7E3;
@@ -56,14 +58,32 @@ body {
 .card-exploracao {
     width: calc(100% - 1rem);
     height: 100px;
-    margin: 50px 0 50px 5px;
+    margin: 10px 0 20px 5px;
     padding: 10px;
-    border-left: var(--dourado) solid 3px;
-    border-radius: 0 0 0 10px;
-    box-shadow: #1A1A2E 4px 2px 4px;
-    background-color: var(--linha);
+    border-left: var(--dourado) solid 4px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: #000 4px 2px 4px;
+    background-color: var(--fundo2);
+}
+
+.card-exploracao p {
+    padding: 10px;
+    
 }
 
 .card-exploracao:hover {
-    
+    transition: .2s;
+    background-color: var(--fundo3);
+    box-shadow: 0px 0px 30px 1px var(--dourado);
+    word-spacing: 1px;
+}
+
+.card-exploracao:hover h3 {
+    transition: .2s;
+    letter-spacing: 1px;
+}
+
+.card-exploracao:hover p {
+    transition: .2s;
+    letter-spacing: 3px;
 }
