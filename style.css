@@ -32,7 +32,7 @@ body {
     margin: 10px 0 0 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 80px;
     list-style: none;
     justify-content: center;
 }
