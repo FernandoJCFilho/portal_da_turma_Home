@@ -96,6 +96,25 @@ body {
     transition: .2s;
     letter-spacing: 3px;
 }
+.hero {
+    background-color: var(--azul2);
+    color: var(--branco);
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.hero h2 {
+    max-width: 800px;
+    margin: 0.75rem auto 0;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
 
 #nome-cabecalho{
     color: var(--fundo);
