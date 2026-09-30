@@ -175,5 +175,63 @@ h1{
   text-decoration: underline;
 }
 
+.bloco-sobre {
+  display: flex;             
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.texto-curso {
+  flex: 1;                    
+}
+
+.texto-curso p {
+  color: var(--cinza);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.texto-curso strong {
+  color: var(--azul);
+  font-weight: 600;
+}
+
+.figura-logo {
+  flex-shrink: 0;             
+  width: 180px;              
+  margin: 0;
+  padding: 1rem;
+  background: var(--branco);
+  border: 1px solid var(--linha);
+  border-top: 4px solid var(--azul2);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(26, 26, 46, 0.08);
+}
+
+.figura-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.figura-logo figcaption {
+  font-size: 0.85rem;
+  color: var(--cinza);
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+#explorar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);   
+  gap: 1.5rem;                              
+}
+
+#explorar h2 {
+  grid-column: 1 / -1;                    
+}
+
 
 
