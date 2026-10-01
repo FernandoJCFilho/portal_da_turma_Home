@@ -10,7 +10,6 @@
   --cinza: #5a6270;
   --linha: #d0d7e3;
   --branco: #ffffff;
-  --dourado-azul3-gradient: linear-gradient(142deg,rgba(200, 146, 42, 1) 0%, rgba(91, 155, 213, 1) 100%);
 }
 
 * {
@@ -39,7 +38,7 @@ body {
   flex-wrap: wrap;
   gap: 80px;
   list-style: none;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .link-nav {
