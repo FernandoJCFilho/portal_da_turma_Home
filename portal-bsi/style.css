@@ -32,13 +32,21 @@ body {
   width: 100%;
 }
 
-#menu-cabecalho ul {
+#menu-principal ul {
   margin: 10px 0 0 0;
   display: flex;
   flex-wrap: wrap;
   gap: 80px;
   list-style: none;
   justify-content: space-evenly;
+}
+
+#nome-cabecalho {
+  color: var(--fundo);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .link-nav {
@@ -61,6 +69,8 @@ body {
   color: var(--tinta);
 }
 
+/* transition: Anima a mudança de uma
+propriedade ao longo do tempo. */
 .card-exploracao {
   width: calc(100% - 1rem);
   height: 100px;
@@ -69,6 +79,7 @@ body {
   border-left: var(--dourado) solid 4px;
   box-shadow: #777 4px 2px 5px;
   background-color: var(--fundo2);
+  transition: 0.2s;
 }
 
 .card-exploracao p {
@@ -76,10 +87,11 @@ body {
 }
 
 .card-exploracao:hover {
-  transition: 0.2s;
-  background: #5B9BD5;
   border-left: var(--azul3) solid 4px;
-  background: linear-gradient(112deg, rgba(91, 155, 213, 1) 0%, rgba(37, 99, 168, 1) 51%, rgba(26, 58, 92, 1) 100%);
+  background: linear-gradient(112deg,
+    var(--azul3) 0%,
+    var(--azul2) 51%,
+    var(--azul) 100%);
   box-shadow: 0px 0px 30px 1px var(--azul3);
   word-spacing: 1px;
 }
@@ -100,7 +112,9 @@ body {
   margin-bottom: 2rem;
 }
 
+/* text-shadow: Adiciona sombra ao texto  */
 .hero h1 {
+  text-shadow: 1px 1px 2px;
   text-align: center;
   font-size: 2.2rem;
 }
@@ -111,14 +125,6 @@ body {
   text-align: center;
   font-size: 1.1rem;
   font-weight: 400;
-}
-
-#nome-cabecalho {
-  color: var(--fundo);
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 700;
 }
 
 .secao {
@@ -144,6 +150,21 @@ h1 {
 
 .lista-atuacao {
   padding-left: 24px;
+}
+
+.texto-curso p + p {
+  margin-top: 1rem;
+}
+
+/* Espaço dos textos soltos da seção */
+.texto-sobre {
+  margin: 0.75rem 0;
+}
+
+/* Substitui o <br> antes dos subtítulos */
+.subtitulo-secao {
+  color: var(--azul2);
+  margin: 2rem 0 0.75rem;
 }
 
 #rodape {
@@ -175,20 +196,20 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-.texto-curso {
-  flex: 1;
+#link-campus{
+  color: var(--azul2);
+  text-decoration: none;
 }
 
-.texto-curso p {
-  color: var(--cinza);
-  line-height: 1.7;
-  margin-bottom: 1rem;
+
+#link-campus:hover{
+  color: var(--dourado);
+  text-decoration: underline;
+  font-weight: bolder;
 }
 
-.texto-curso strong {
-  color: var(--azul);
-  font-weight: 600;
-}
+/* box-shadow: Adiciona sombra ao elemento */
+/* border-radius:Valores diferentes por canto (Arredondamento) */
 
 .figura-logo {
   flex-shrink: 0;
@@ -242,4 +263,19 @@ h1 {
 .aside-turma p {
   color: var(--cinza);
   font-style: italic;
+}
+
+/* Links do menu, rodapé e link do campus */
+.link-nav:focus-visible,
+#nome-cabecalho:focus-visible,
+.link-rodape:focus-visible,
+#link-campus:focus-visible {
+  outline: 3px solid var(--dourado);
+  outline-offset: 3px;
+}
+
+/* Cards: o foco está no <a>, então destacamos o card dentro dele */
+.link-exploracao:focus-visible {
+  outline: 3px solid var(--dourado);
+  outline-offset: 4px;
 }

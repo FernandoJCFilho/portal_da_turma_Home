@@ -7,15 +7,22 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header id="cabecalho">
-      <nav id="menu-cabecalho" aria-label="Navegação principal">
+      <nav id="menu-principal" aria-label="Navegação principal">
         <a href="index.html" id="nome-cabecalho">Portal da Turma</a>
         <ul>
-          <li><a href="index.html" class="link-nav ativo" aria-current="page">Home</a></li>
+          <li>
+            <a href="index.html" class="link-nav ativo" aria-current="page"
+              >Home</a
+            >
+          </li>
           <li><a href="turma.html" class="link-nav">Turma</a></li>
           <li><a href="projetos.html" class="link-nav">Projetos</a></li>
           <li><a href="campus.html" class="link-nav">Campus</a></li>
@@ -26,12 +33,12 @@
     </header>
 
     <main id="conteudo-principal">
-      <section class="hero" class="secao">
+      <section class="hero">
         <h1>Portal da Turma - BSI 4º Período</h1>
         <h2>
           Portal desenvolvido pelos estudantes de Programação Web I para
           apresentar a turma, seus projetos, as tecnologias aprendidas e o
-          campus onde estudamos.S
+          campus onde estudamos.
         </h2>
       </section>
 
@@ -41,19 +48,45 @@
         <article class="bloco-sobre">
           <article class="texto-curso">
             <p>
-              O curso de 
-              <strong>Sistemas de Informação do IF Goiano - Campus Ceres</strong>
-              forma profissionais que entendem tanto de Tecnologia quanto de
-              gestão. É uma formação que prepara para criar, analisar e
-              gerenciar sistemas que resolvem problemas reais das organizações.
+              O curso de
+              <strong
+                >Sistemas de Informação do IF Goiano - Campus Ceres</strong
+              >
+              forma profissionais capazes de unir Tecnologia e gestão de
+              negócios. Ao longo da graduação, o estudante aprende a planejar,
+              desenvolver e gerenciar soluções de TI que resolvem problemas
+              reais das organizações. É uma formação que prepara para atuar
+              tanto no desenvolvimento técnico quanto na gestão estratégica da
+              tecnologia dentro das empresas, conectando pessoas, processos e
+              sistemas.
+            </p>
+
+            <p>
+              A formação está alinhada às diretrizes da Sociedade Brasileira de
+              Computação (SBC) - entidade científica fundada em 1978 que reúne
+              estudantes, docentes e profissionais da área em todo o Brasil. A
+              SBC atua no incentivo ao ensino, à pesquisa e ao desenvolvimento
+              da Computação, contribuindo para a formação de profissionais com
+              responsabilidade social.
+            </p>
+
+            <p>
+              O curso segue o Projeto Pedagógico de Curso (PPC) reformulado em
+              2021, que trouxe avanços importantes: exclusão de pré-requisitos,
+              possibilidade de atividades integradoras, curricularização da
+              extensão e incremento de disciplinas nas áreas de Infraestrutura,
+              Gestão e Software . Essa atualização alinhou o curso às novas
+              Diretrizes Curriculares Nacionais e às demandas do mundo
+              profissional.
             </p>
           </article>
           <figure class="figura-logo">
             <img
-              src="https://cin.ufpe.br/~jrbj/img/sistemas_info.png"
+              src="img/sistemas_info.png"
               alt="Logomarca do curso de Sistemas de Informação"
               width="350"
-              height="150"/>
+              height="150"
+            />
             <figcaption>Bacharelado em SI</figcaption>
           </figure>
         </article>
@@ -75,6 +108,7 @@
           negócio, conectando a tecnologia às necessidades reais das
           organizações.
         </p>
+        <br />
 
         <h3 class="subtitulo-secao">
           Nossa Instituição: IF Goiano - Campus Ceres
@@ -90,22 +124,22 @@
               formação de profissionais capacitados para o mercado e para o
               desenvolvimento do Vale de São Patrício.
             </p>
+
+            <p class="texto-sobre">
+              Saiba mais sobre nossa instituição:
+              <a id="link-campus" href="campus.html">Campus</a>
+            </p>
           </article>
           <figure class="figura-logo">
             <img
-              src="https://www.ifgoiano.edu.br/home/images/REITORIA/Imagens/2017/Untitled-2.png"
-              alt="Logomarca do IF Goiano — Campus Ceres"
+              src="img/ifgoiano_campus_ceres.png"
+              alt="Logomarca do IF Goiano - Campus Ceres"
               width="120"
               height="175"
             />
             <figcaption>IF Goiano - Campus Ceres</figcaption>
           </figure>
         </article>
-
-        <p>
-          Saiba mais sobre nossa instituição:
-          <a href="campus.html" target="_blank">Campus</a>
-        </p>
 
         <aside class="aside-turma" aria-label="Frase da turma">
           <h3>Frase da turma</h3>
@@ -123,13 +157,13 @@
         <a href="index.html" class="link-exploracao">
           <article class="card-exploracao">
             <h3>Home</h3>
-            <p>A pagina inicial do portal</p>
+            <p>A página inicial do portal</p>
           </article>
         </a>
         <a href="turma.html" class="link-exploracao">
           <article class="card-exploracao">
             <h3>A Turma</h3>
-            <p>Pagina para os integrantes da turma do portal</p>
+            <p>Página para os integrantes da turma do portal</p>
           </article>
         </a>
         <a href="projetos.html" class="link-exploracao">
@@ -141,31 +175,32 @@
         <a href="campus.html" class="link-exploracao">
           <article class="card-exploracao">
             <h3>Campus & Região</h3>
-            <p>Pagina sobre o campus e sua região</p>
+            <p>Página sobre o campus e sua região</p>
           </article>
         </a>
         <a href="tecnologias.html" class="link-exploracao">
           <article class="card-exploracao">
             <h3>Tecnologia</h3>
-            <p>Tecnologia aprendia pela turma</p>
+            <p>Tecnologias aprendidas pela turma</p>
           </article>
         </a>
         <a href="contato.html" class="link-exploracao">
           <article class="card-exploracao">
             <h3>Contato & Eventos</h3>
-            <p>Pagina para o contato com os integrantes</p>
+            <p>Página para o contato com os integrantes</p>
           </article>
         </a>
       </section>
     </main>
 
     <footer id="rodape">
-      <p>Portal da Turma - BSI 4º período IF Goiano - Campus Ceres</p>
+      <p>Portal da Turma - BSI 4º período, IF Goiano - Campus Ceres</p>
       <p>
         Desenvolvido pelo
         <strong>
           4° Período de 2026 do curso de Bacharelado em Sistemas de
-          Informação</strong>
+          Informação</strong
+        >
         - Programação Web I - 2026/2
       </p>
       <p>
