@@ -10,6 +10,7 @@
   --cinza: #5a6270;
   --linha: #d0d7e3;
   --branco: #ffffff;
+  --dourado-azul3-gradient: linear-gradient(142deg,rgba(200, 146, 42, 1) 0%, rgba(91, 155, 213, 1) 100%);
 }
 
 * {
@@ -29,6 +30,7 @@ body {
 #cabecalho {
   background-color: var(--azul);
   padding: 10px 10px;
+  width: 100%;
 }
 
 #menu-cabecalho ul {
@@ -66,8 +68,7 @@ body {
   margin: 10px 0 20px 5px;
   padding: 10px;
   border-left: var(--dourado) solid 4px;
-  border-radius: 10px 0 0 10px;
-  box-shadow: #000 4px 2px 4px;
+  box-shadow: #777 4px 2px 5px;
   background-color: var(--fundo2);
 }
 
@@ -77,19 +78,21 @@ body {
 
 .card-exploracao:hover {
   transition: 0.2s;
-  background-color: var(--fundo3);
-  box-shadow: 0px 0px 30px 1px var(--dourado);
+  background: #5B9BD5;
+  border-left: var(--azul3) solid 4px;
+  background: linear-gradient(112deg, rgba(91, 155, 213, 1) 0%, rgba(37, 99, 168, 1) 51%, rgba(26, 58, 92, 1) 100%);
+  box-shadow: 0px 0px 30px 1px var(--azul3);
   word-spacing: 1px;
 }
 
 .card-exploracao:hover h3 {
   transition: 0.2s;
-  letter-spacing: 1px;
+  letter-spacing: .5px;
 }
 
 .card-exploracao:hover p {
   transition: 0.2s;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 .hero {
   background-color: var(--azul2);
@@ -216,7 +219,7 @@ h1 {
 
 #explorar {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
